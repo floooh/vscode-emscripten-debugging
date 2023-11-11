@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000/build/Debug/${command:cmake.launchTargetFilename}",
+            "preLaunchTask": "StartServer",
+        }
+    ]
+}

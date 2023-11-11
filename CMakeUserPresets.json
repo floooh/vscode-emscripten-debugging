@@ -1,0 +1,30 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Emscripten",
+            "binaryDir": "build",
+            "generator": "Ninja Multi-Config",
+            "toolchainFile": "emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debug",
+            "configurePreset": "default",
+            "configuration": "Debug"
+        },
+        {
+            "name": "Release",
+            "configurePreset": "default",
+            "configuration": "Release"
+        }
+
+    ]
+}
